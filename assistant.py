@@ -1,7 +1,7 @@
 import json, os, re, shlex, subprocess, urllib.request, urllib.error
 from datetime import datetime, timedelta
 
-BASE = os.path.expanduser("~/assistant")
+BASE = os.path.dirname(os.path.abspath(__file__))
 HIST = os.path.join(BASE, "history.json")
 MEM = os.path.join(BASE, "memory.md")
 KEY = os.environ.get("GEMINI_API_KEY")
